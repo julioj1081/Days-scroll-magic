@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Website</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Abril+Fatface|Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./estilo.css" />
+  </head>
+   <!--El data barba wrapper es para hacer el efecto de cambio de pagina-->
+  <body data-barba="wrapper">
+    <header class="nav-header">
+      <h1><a href="../index.html" id="logo" >days.</a></h1>
+      <div class="burger">
+        <div class="linea1"></div>
+        <div class="linea2"></div>
+      </div>
+    </header>
+    <!--El indicamos a barba que este va ser la pagina fashion -->
+    <main data-barba="container" data-barba-namespace="fashion">
+      <section class="fashion1 detail-slide">
+        <div class="fashion-text">
+            <h1>Luiza bug</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic eaque, maiores excepturi repellat quae id atque beatae, perspiciatis ab tenetur harum exercitationem. Animi in, quis numquam delectus nisi vitae? Aliquid!</p>
+        </div>
+        <div class="fashion-img">
+            <img src="../img/fashion-img1.png" alt="">
+        </div>
+        <div class="fashion-nr"><span>01</span></div>
+      </section>
+      <section class="fashion2 detail-slide">
+        <div class="fashion-text">
+            <h1>Luiza bug</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic eaque, maiores excepturi repellat quae id atque beatae, perspiciatis ab tenetur harum exercitationem. Animi in, quis numquam delectus nisi vitae? Aliquid!</p>
+        </div>
+        <div class="fashion-img">
+            <img src="../img/fashion-img2.png" alt="">
+        </div>
+        <div class="fashion-nr"><span>02</span></div>
+      </section>
+      <section class="fashion3 detail-slide">
+        <div class="fashion-text">
+            <h1>Luiza bug</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic eaque, maiores excepturi repellat quae id atque beatae, perspiciatis ab tenetur harum exercitationem. Animi in, quis numquam delectus nisi vitae? Aliquid!</p>
+        </div>
+        <div class="fashion-img">
+            <img src="../img/fashion-img3.png" alt="">
+        </div>
+        <div class="fashion-nr"><span>03</span></div>
+      </section>
+    </main>
+    <nav class="nav-bar">
+      <ul class="nav-links">
+        <h3>Twitter</h3>
+        <h3>Youtube</h3>
+        <h3>Instragram</h3>
+      </ul>
+      <div class="contact">
+        <h2>Stay in touch.</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis dolorem
+          praesentium ea amet error quidem natus. Magnam explicabo sed tenetur?
+        </p>
+      </div>
+    </nav>
+    <div class="cursor">
+      <span class="cursor-text"></span>
+    </div>
+    <div class="swipe swipe1"></div>
+    <div class="swipe swipe2"></div>
+    <div class="swipe swipe3"></div>
+    <!--CDN DE BARBAJS-->
+    <script src="https://unpkg.com/@barba/core"></script>
+    <!--CDN DE GSAP-->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"
+      integrity="sha256-2p2tRZlPowp3P/04Pw2rqVCSbhyV/IB7ZEVUglrDS/c="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"
+      integrity="sha256-XBVALc3QsDSQiDtiaBwNZ2rxCJTHzlUhhlDQ84J8bw8="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"
+      integrity="sha256-+9YNuItWuR4sbqeaNiJOxG0BvptYz4fbUXbIZoH5Jwo="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"
+      integrity="sha256-3arngJBQR3FTyeRtL3muAGFaGcL8iHsubYOqq48mBLw="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
